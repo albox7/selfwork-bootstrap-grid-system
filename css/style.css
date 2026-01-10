@@ -1,0 +1,328 @@
+
+
+/*——————————————————————————————————————*/
+/*										*/
+/*	Valori iniziali						*/
+/*										*/
+/*——————————————————————————————————————*/
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+
+
+/*——————————————————————————————————————*/
+/*										*/
+/*	Header								*/
+/*										*/
+/*——————————————————————————————————————*/
+
+header {
+	position: fixed;
+	width: 100%;
+	padding-left: 2%;
+	padding-right: 1%;
+	z-index: 999 !important;
+	background: white;
+	box-shadow: 0 10px 20px rgba(0,0,0,.1);
+	opacity: .98;
+}
+
+header .logo-full {
+	width: 110px;
+	height: auto;
+}
+
+
+
+/*——————————————————————————————————————*/
+/*										*/
+/*	Main nav							*/
+/*										*/
+/*——————————————————————————————————————*/
+
+.navbar-toggler {
+	border: 0 none;
+}
+
+.navbar-collapse {
+	position: relative;
+	top: auto;
+}
+
+
+
+/*——————————————————————————————————————*/
+/*										*/
+/*	Section hero						*/
+/*										*/
+/*——————————————————————————————————————*/
+
+section.hero {
+	position: relative;
+}
+
+section.hero h1 {
+	color: white;
+	font-weight: 900;
+	font-size: 4rem;
+	text-shadow: 0 10px 20px rgba(0,0,0,.5);
+}
+
+section.hero h2 {
+	color: white;
+	font-size: 2rem;
+	text-shadow: 0 5px 10px rgba(0,0,0,.5);
+	margin-bottom: 5%;
+}
+
+section.hero a.button {
+	padding: 2% 6%;
+	font-weight: 600;
+	font-size: 1.4rem;
+	border: 0 none;
+	border-radius: 100px;
+	color: white;
+	background: black;
+	opacity: .8;
+	box-shadow: 0 10px 20px rgba(255,102,0,.7);
+	transition: background .2s ease-out;
+}
+
+section.hero a.button:hover {
+	background: white;
+	color: black;
+}
+
+section.hero img {
+	width: 100%;
+	height: auto;
+}
+
+section.hero > div {
+	position: absolute;
+	top: 30%;
+	padding: 2% 6% 10% 20%;
+	pointer-events: none;
+}
+
+section.hero > div > a {
+	pointer-events: auto;
+}
+
+
+
+/*——————————————————————————————————————*/
+/*										*/
+/*	Section Featured 					*/
+/*										*/
+/*——————————————————————————————————————*/
+
+section.featured {
+	padding: 6% 2% 4% 2%;
+}
+
+section.featured h3, section.featured h5 {
+	font-weight: 900;
+	margin-bottom: 3%;
+}
+
+section.featured img {
+	height: 200px;
+	object-fit: cover;
+}
+
+section.featured .card-body {
+	padding: 7%;
+}
+
+
+
+
+/*——————————————————————————————————————*/
+/*										*/
+/*	Section form 						*/
+/*										*/
+/*——————————————————————————————————————*/
+
+section.form-job .container-fluid {
+	padding: 6% 6% 8% 6%;
+	background: #F2EAC4;
+}
+
+section.form-job h4 {
+	font-weight: 900;
+	font-size: 2rem;
+}
+
+form label {
+	color: #999;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+form input.form-control, form button.form-control {
+	height: 44px;
+	padding: 2% 5%;
+	border-radius: 5px;
+	border: 1px solid #808080 !important;
+}
+
+form button.form-control {
+	margin-top: 24px;
+	border: 0 none !important;
+	background: #121212;
+	color: white;
+}
+
+form button.form-control:focus {
+	background: #121212;
+	color: white;
+	box-shadow: none;
+}
+
+
+form input::placeholder {
+	color: #999 !important;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+
+
+
+/*——————————————————————————————————————*/
+/*										*/
+/*	Footer								*/
+/*										*/
+/*——————————————————————————————————————*/
+
+footer {
+	border-top: 1px solid #E3E3E3;
+	padding: 3% 6% 3% 6%;
+}
+
+footer ul.social {
+	padding-top: 20px;
+}
+
+footer ul.social a {
+	color: #121212;
+}
+
+
+
+
+/*——————————————————————————————————————*/
+/*										*/
+/*	Modal								*/
+/*										*/
+/*——————————————————————————————————————*/
+
+.modal-content {
+	padding: 4%;
+}
+
+.modal-header {
+	border-bottom: 0 none;
+}
+
+.modal-footer {
+	border-top: 0 none;
+}
+
+
+
+/*——————————————————————————————————————*/
+/*										*/
+/*	Media query							*/
+/*										*/
+/*——————————————————————————————————————*/
+
+
+/* xs */
+@media (min-width: 0px) and (max-width: 575px) {
+
+	section.featured .card-body {
+		padding: 6% !important;
+	}
+
+	form label:last-of-type {
+		margin-top: 16px;
+	}
+
+	form button.form-control {
+		margin-top: 30px;
+	}
+
+	section.hero > div {
+		top: 36%;
+	}
+
+	section.hero h1 {
+		font-size: 1.6rem;
+	}
+
+	section.hero h2 {
+		font-size: 1.1rem;
+	}
+
+	section.hero a.button {
+		font-size: 1rem;
+	}
+
+	section.form-job h4 {
+		font-size: 1.6rem;
+	}
+
+	.navbar-collapse {
+		top: 20px;
+		padding-bottom: 20px;
+	}
+
+}
+
+/* sm */
+@media (min-width: 576px) and (max-width: 768px) {
+
+	section.hero > div {
+		top: 32%;
+	}
+
+	section.hero h1 {
+		font-size: 2.6rem;
+	}
+
+	section.hero h2 {
+		font-size: 1.6rem;
+	}
+
+	section.hero a.button {
+		font-size: 1.2rem;
+	}
+
+	.navbar-collapse {
+		top: 20px;
+		padding-bottom: 20px;
+	}
+
+}
+
+
+/* md  */
+@media (min-width: 769px) and (max-width: 991px) {
+
+	.navbar-collapse {
+		top: 20px;
+		padding-bottom: 20px;
+	}
+
+}
+
+
