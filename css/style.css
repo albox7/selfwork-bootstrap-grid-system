@@ -124,8 +124,7 @@ section.hero > div > a {
 /*——————————————————————————————————————*/
 
 section.featured {
-	margin-top: 40px;
-	padding: 0 4%;
+	padding: 6% 2% 4% 2%;
 }
 
 section.featured h3, section.featured h5 {
@@ -151,9 +150,8 @@ section.featured .card-body {
 /*										*/
 /*——————————————————————————————————————*/
 
-section.form-job {
-	margin: 6% 0 0 0;
-	padding: 6% 4% 8% 4%;
+section.form-job.container-fluid {
+	padding: 6% 6% 8% 6%;
 	background: #F2EAC4;
 }
 
@@ -188,6 +186,7 @@ form button.form-control:focus {
 	box-shadow: none;
 }
 
+
 form input::placeholder {
 	color: #999 !important;
 	font-style: italic;
@@ -204,9 +203,9 @@ form input::placeholder {
 /*										*/
 /*——————————————————————————————————————*/
 
-footer.container-fluid {
+footer {
 	border-top: 1px solid #E3E3E3;
-	padding: 3% 4% 3% 4%;
+	padding: 3% 6% 3% 6%;
 }
 
 footer ul.social {

@@ -19,38 +19,35 @@
 	<body>
 
 		<!-- Header -->
-		<header class="container-fluid">
+		<header>
 			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="#">
-						<img class="logo-full" src="./img/logo-full.svg" alt="The Films Blog logo">
-					</a>					
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Trailers</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Ultime uscite</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Archivio</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Contatti</a>
-							</li>
-						</ul>
-					</div>
-				</div>
+				<a class="navbar-brand" href="#">
+					<img src="./img/logo-full.svg" alt="The Films Blog logo" height="40">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="mainNavbar">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Trailers</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Ultime uscite</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Archivio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contatti</a>
+						</li>
+					</ul>
+				</div>							
 			</nav>
 		</header>
-
 
 
 
@@ -71,7 +68,7 @@
 
 
 			<!-- Featured films - Grid 3 columns -->
-			<section class="container-fluid featured">
+			<section class="featured container-fluid">
 				<div class="row">
 					<div class="col">
 						<h3>Film in evidenza</h3>
@@ -80,7 +77,6 @@
 				<div class="row">
 					<div class="col">
 						<div class="card-group">
-							
 							<div class="card">
 								<img src="./img/pulp-fiction.jpg" class="card-img-top" alt="Pulp fiction">
 								<div class="card-body">
@@ -112,7 +108,7 @@
 
 
 			<!-- Form -->
-			<section class="container-fluid form-job">
+			<section class="form-job container-fluid">
 				<div class="row">
 					<div class="col">
 						<h4>Lavora con noi</h4>
@@ -123,26 +119,28 @@
 							candidature.
 						</p>
 					</div>
-				</div>
-				<form action="#" method="post">
-					<div class="row">
-						<div class="col-12 col-md-4 col-lg-3">
-							<label for="email">Email</label><br>
-							<input class="form-control" type="email" id="email" name="email" placeholder=" Inserisci la tua email" required>
-						</div>
-						<div class="col-12 col-md-4 col-lg-3">
-							<label for="password">Password</label><br>
-							<input class="form-control" type="password" id="password" name="password" placeholder="Inserisci una password" required>
-						</div>
+					<form action="#" method="post">
+						<div class="row">
+							<div class="col-lg-3 col-md-4 col-sm-12">
+								<label for="email">Email</label><br>
+								<input class="form-control" type="email" id="email" name="email" placeholder=" Inserisci la tua email" required>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-12">
+								<label for="password">Password</label><br>
+								<input class="form-control" type="password" id="password" name="password" placeholder="Inserisci una password" required>
+							</div>
 
-						<div class="col-12 col-md-4 col-lg-3">
-							<button type="button" class="form-control" id="openModal" data-bs-target="#staticBackdrop">
-								Invia
-							</button>
+							<div class="col-lg-3 col-md-4 col-sm-12">
+								<button type="button" class="form-control" id="openModal" data-bs-target="#staticBackdrop">
+									Invia
+								</button>
+							</div>
 						</div>
-					</div>
-				</form>
+					</form>
+				</div>
 			</section>
+
+
 		</main>
 
 
@@ -195,7 +193,7 @@
 
 
 
-		<script>
+		<!-- <script>
 			document.getElementById("openModal").addEventListener("click", function () {
 				const form = document.querySelector("form");
 
@@ -207,6 +205,7 @@
 				new bootstrap.Modal(document.getElementById('feedbackModal')).show();
 			});
 		</script>
+ -->
 
 
 
