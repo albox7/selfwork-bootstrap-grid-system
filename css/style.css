@@ -15,31 +15,6 @@ ul {
 }
 
 
-
-/*——————————————————————————————————————*/
-/*										*/
-/*	Header								*/
-/*										*/
-/*——————————————————————————————————————*/
-
-header {
-	position: fixed;
-	width: 100%;
-	padding-left: 2%;
-	padding-right: 1%;
-	z-index: 999 !important;
-	background: white;
-	box-shadow: 0 10px 20px rgba(0,0,0,.1);
-	opacity: .98;
-}
-
-header .logo-full {
-	width: 110px;
-	height: auto;
-}
-
-
-
 /*——————————————————————————————————————*/
 /*										*/
 /*	Main nav							*/
@@ -53,6 +28,17 @@ header .logo-full {
 .navbar-collapse {
 	position: relative;
 	top: auto;
+}
+
+.navbar {
+	width: 100%;
+	position: fixed;
+	z-index: 999 !important;
+	background: white;
+	box-shadow: 0 10px 20px rgba(0,0,0,.1);
+	opacity: .98;
+	padding-left: 2%;
+	padding-right: 1%;
 }
 
 
